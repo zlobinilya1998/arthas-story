@@ -1,0 +1,43 @@
+@font-face { font-family: "Folkard"; src: url('./assets/font/folkard_.ttf'); } 
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+figure {
+  position: relative;
+  margin: 0;
+}
+
+figcaption {
+  position: relative;
+  bottom: 2em;
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: gold 1px 0 10px;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
