@@ -10,8 +10,6 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: url("background.jpg") center center;
-    background-size: cover;
 }
 .fog::before,
 .fog::after,

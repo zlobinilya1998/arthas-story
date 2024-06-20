@@ -8,5 +8,5 @@ export default defineConfig({
         globals: true,
         environment: "happy-dom",
     },
-    base: process.env.NODE_ENV === "production" ? "/arthas-story/" : "/",
+    base: "/arthas-story/",
 });
