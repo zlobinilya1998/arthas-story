@@ -13,6 +13,6 @@
     line-height: 1.5;
     border-right: 2.5px solid var(--accent-color);
     text-shadow: 1px 1px var(--secondary-color);
-    font-family: "Folkard", sans-serif;
+    font-family: "Warcraft", sans-serif;
 }
 </style>

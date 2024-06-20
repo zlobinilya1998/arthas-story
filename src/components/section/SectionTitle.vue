@@ -40,10 +40,11 @@ onMounted(() => {
     color: var(--main-color);
     padding: 10px 0;
     line-height: 1.5;
-    font-size: 1.75em;
-    font-family: "Folkard", sans-serif;
+    font-size: 2.5em;
+    font-family: "Warcraft", sans-serif;
     text-shadow: 2px 2px black;
     text-align: center;
+    letter-spacing: 0.1em;
 
     background-image: url("/src/assets/images/section/northrend.jpg");
     background-size: cover;
