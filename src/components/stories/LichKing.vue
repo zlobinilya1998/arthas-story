@@ -9,7 +9,7 @@
         </SectionText>
         <SectionSubtitle>Betrayal</SectionSubtitle>
         <SectionFigure
-            src="/src/assets/images/homecoming.webp"
+            :src="Homecoming"
             caption="Being awaited by his father"
         >
             Terenas: Ah, my son. I knew you would be victorious. The whispers through the blade
@@ -24,7 +24,7 @@
             Arthas remembered the words of his old friend Varian describing his own father and king
             Llane being stabbed in the heart.</SectionText
         >
-        <SectionFigure src="/src/assets/images/betrayal.webp" caption="After the murder">
+        <SectionFigure :src="Betrayal" caption="After the murder">
             Terenas: What is this? What are you doing, my son? <br />
             Arthas: Succeeding you, Father... This kingdom shall fall, and from the ashes shall
             arise a new order that will shake the very foundations of the world.
@@ -91,4 +91,7 @@ import SectionText from "../section/SectionText.vue";
 import SectionTitle from "../section/SectionTitle.vue";
 import SectionSubtitle from "../section/SectionSubtitle.vue";
 import SectionFigure from "../section/SectionFigure.vue";
+
+import Homecoming from "/src/assets/images/homecoming.webp";
+import Betrayal from "/src/assets/images/betrayal.webp";
 </script>

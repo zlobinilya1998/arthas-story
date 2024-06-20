@@ -36,7 +36,7 @@
             might be right, but Arthas paid her no heed and continued to Stratholme
         </SectionText>
         <SectionFigure
-            src="/src/assets/images/kelthuzad.webp"
+            :src="Stratholme"
             caption="Arthas and Jaina encountering Kel'Thuzad"
         />
         <SectionSubtitle>Culling of Stratholme</SectionSubtitle>
@@ -58,7 +58,7 @@
             Stratholme, and those fires burn to this day.
         </SectionText>
         <SectionFigure
-            src="/src/assets/images/stratholme.webp"
+            :src="Stratholme"
             caption="Arthas starting to kill the citizens"
         />
     </div>
@@ -69,4 +69,7 @@ import SectionText from "../section/SectionText.vue";
 import SectionTitle from "../section/SectionTitle.vue";
 import SectionSubtitle from "../section/SectionSubtitle.vue";
 import SectionFigure from "../section/SectionFigure.vue";
+
+import Kelthuzad from "/src/assets/images/kelthuzad.webp";
+import Stratholme from "/src/assets/images/stratholme.webp";
 </script>

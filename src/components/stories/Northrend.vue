@@ -29,7 +29,7 @@
             As he arrived, Mal'Ganis appeared to him, and foretold his death. Arthas went to search
             for Frostmourne with Muradin, leaving his captain to defend the camp.
         </SectionText>
-        <SectionFigure src="/src/assets/images/frostmourne.webp" caption="Claming Frostmourne" />
+        <SectionFigure :src="Frostmourne" caption="Claming Frostmourne" />
         <SectionText>
             Using an ancient waygate Arthas, Muradin, and a small group of men traveled to the
             vicinity of the fabled runeblade. Arthas was soon confronted by the Guardian, who tried
@@ -45,7 +45,7 @@
             base, leaving Muradin for dead. With Frostmourne in hand, Arthas defeated Mal'Ganis's
             army, destroyed his base, and finally confronted the demon.
         </SectionText>
-        <SectionFigure src="/src/assets/images/malganis.webp" caption="Arthas strike Mal'Ganis " />
+        <SectionFigure :src="Malganis" caption="Arthas strike Mal'Ganis " />
         <SectionText>
             Mal'Ganis told him that the voice he was now hearing was that of the Lich King and asked
             what he was telling him. Arthas replied that voice was instructing him to destroy
@@ -62,4 +62,7 @@ import SectionText from "../section/SectionText.vue";
 import SectionTitle from "../section/SectionTitle.vue";
 import SectionSubtitle from "../section/SectionSubtitle.vue";
 import SectionFigure from "../section/SectionFigure.vue";
+
+import Frostmourne from "/src/assets/images/frostmourne.webp";
+import Malganis from "/src/assets/images/malganis.webp";
 </script>

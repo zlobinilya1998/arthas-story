@@ -11,7 +11,7 @@
             a horrendous twisted form (a banshee) and enslaving her to the will of the Lich King,
             forcing her to slay her own people.
         </SectionText>
-        <SectionFigure src="/src/assets/images/arthas-sylvanas.jpg">
+        <SectionFigure :src="ArthasSylvanas">
           Sylvanas: Finish it! I deserve... a clean death <br/>
           Arthas: After all you've put me trough, woman, the last thing i'll give you is the peace of death
         </SectionFigure>
@@ -33,4 +33,6 @@ import SectionText from "../section/SectionText.vue";
 import SectionTitle from "../section/SectionTitle.vue";
 import SectionFigure from "../section/SectionFigure.vue";
 import SectionVideo from "../section/SectionVideo.vue";
+
+import ArthasSylvanas from "/src/assets/images/arthas-sylvanas.jpg";
 </script>
