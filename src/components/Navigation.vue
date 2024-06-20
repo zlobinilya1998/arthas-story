@@ -76,7 +76,7 @@ onMounted(() => {
     background: rgba(0, 0, 0, 0.2);
     z-index: 1;
     &-item {
-        cursor: pointer;
+        cursor: url("/src/assets/images/cursor-hover.webp"), auto;
         padding: 5px 10px;
         transition: 0.3s;
         background-size: contain;

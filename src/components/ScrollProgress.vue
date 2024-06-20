@@ -21,7 +21,6 @@ window.onscroll = scrollHandler;
     bottom: 0;
     width: 100%;
     height: 5px;
-    background: var(--main-color);
 }
 
 .progress-bar {
