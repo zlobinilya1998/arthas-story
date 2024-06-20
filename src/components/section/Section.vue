@@ -42,8 +42,9 @@ import QuelThalas from "/src/components/stories/QuelThalas.vue";
         max-width: 900px;
         margin: 0 auto;
         font-size: 1em;
-        letter-spacing: 0.1em;
-        padding-left: 10px;
+        font-family: Roboto, sans-serif;
+        line-height: 1.5;
+        padding-left: 1em;
     }
 }
 </style>
