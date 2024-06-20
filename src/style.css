@@ -1,43 +1,66 @@
-@font-face { font-family: "Folkard"; src: url('./assets/font/folkard_.ttf'); } 
+@font-face {
+    font-family: "Folkard";
+    src: url("./assets/font/folkard_.ttf");
+}
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    --main-color: rgba(10, 212, 248, 0.9);
+    --secondary-color: rgb(11, 119, 234);
+    --accent-color: gold;
+
+    --main-color-clear: rgba(10, 212, 248, .5)
 }
 
 body {
-  margin: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 img {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
+    transition: 0.3s;
 }
 
 figure {
-  position: relative;
-  margin: 0;
+    position: relative;
+    margin: 0;
 }
 
 figcaption {
-  position: relative;
-  bottom: 2em;
-  opacity: 0;
-  transition: 0.3s;
-  font-size: 2em;
-  text-align: center;
-  text-shadow: gold 1px 0 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: gold 1px 0 10px;
+    font-family: "Folkard", sans-serif;
 }
 
 figure:hover figcaption {
-  opacity: 1;
+    opacity: 1;
+}
+
+@keyframes shine {
+    from {
+        box-shadow: 0 0 55px 10px white;
+    }
+    to {
+        box-shadow: 0 0 90px 20px white;
+    }
 }

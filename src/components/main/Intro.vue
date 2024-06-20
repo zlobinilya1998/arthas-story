@@ -1,0 +1,76 @@
+<template>
+    <div class="intro-background">
+        <div class="intro-top" />
+        <div class="intro-bottom" />
+        <div class="intro-content">
+            <img
+                class="intro-content-img"
+                src="https://static.wikia.nocookie.net/wowpedia/images/b/bc/Warcraft_III_Box_-_Arthas.jpg"
+            />
+            <div>
+                <div class="intro-description">
+                    Prince Arthas Menethil was born to King Terenas Menethil II and Queen Lianne
+                    Menethil, four years before the start of the First War. The young prince
+                    grew up in a time when the lands of Azeroth were ravaged by war, the Alliance
+                    was crumbling, and darker clouds still loomed on the horizon. As a young child,
+                    Arthas became best friends with Varian Wrynn and often sparred with him, though
+                    Arthas was less experienced. He also watched as his future steed, Invincible,
+                    grew up. As a youth, Arthas was trained in combat by Muradin Bronzebeard, the
+                    brother of the dwarven king Magni Bronzebeard, and became an adept swordsman. At
+                    the same time he learned the ways of the Light under the tutelage of Uther the
+                    Lightbringer. He also developed an interest in Jaina Proudmoore when she was
+                    staying in Lordaeron while on her way to Dalaran, where she would be studying.
+                    Some time later, Terenas arranged a political marriage for Arthas' sister Calia
+                    with Daval Prestor. Calia was distraught by the decision and hoped Arthas would
+                    marry for love rather than politics.
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style lang="scss">
+.intro {
+    &-background {
+        position: relative;
+        padding: 50px 0;
+        background-image: url("https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt68767eb2e400c81d/6527ba4ba954472098f3f1f1/Cloud_Desktop.jpg");
+    }
+    &-top {
+        position: absolute;
+        top: -25px;
+        width: 100%;
+        height: 80px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt661008ac61a51d63/653018bbaf5c2fb7aca0cb0e/Border_1.png?format=webply&quality=70");
+    }
+
+    &-bottom {
+        position: absolute;
+        bottom: 0px;
+        height: 20px;
+        width: 100%;
+        background-image: url("https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltf52d4b60a1a29098/border_bottom.png?format=webply&quality=70");
+    }
+
+    &-content {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-family: "Folkard", sans-serif;
+        &-img {
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid rgba(245, 182, 22, 0.5);
+        }
+    }
+
+    &-description {
+        margin-top: 5px;
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+    }
+}
+</style>
