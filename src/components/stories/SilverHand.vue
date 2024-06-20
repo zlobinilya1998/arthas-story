@@ -36,7 +36,7 @@
             might be right, but Arthas paid her no heed and continued to Stratholme
         </SectionText>
         <SectionFigure
-            :src="Stratholme"
+            :src="Kelthuzad"
             caption="Arthas and Jaina encountering Kel'Thuzad"
         />
         <SectionSubtitle>Culling of Stratholme</SectionSubtitle>
