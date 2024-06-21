@@ -1,17 +1,14 @@
 <template>
     <div class="section-history-item">
         <SectionTitle>Champion of the Lich King</SectionTitle>
-        <SectionText
-            >In Northrend, Arthas became the first of the Lich King's death knights. He was given a
+        <SectionText paragraph>
+            In Northrend, Arthas became the first of the Lich King's death knights. He was given a
             suit of saronite armor, and slew nearly all of his own men before raising them as
             undead. Some among them, notably Falric, Marwyn and Thassarian, were raised as death
             knights in Arthas' service.
         </SectionText>
         <SectionSubtitle>Betrayal</SectionSubtitle>
-        <SectionFigure
-            :src="Homecoming"
-            caption="Being awaited by his father"
-        >
+        <SectionFigure :src="Homecoming" caption="Being awaited by his father">
             Terenas: Ah, my son. I knew you would be victorious. The whispers through the blade
             speak to Arthas.
         </SectionFigure>
@@ -35,7 +32,7 @@
             the fallen hero Killoren. Sensing a conflict within Thassarian, Arthas ordered
             Thassarian to kill Vivian - his mother - in order to prove his loyalty.
         </SectionText>
-
+        <SectionDivider/>
         <SectionText>
             Leaving Falric and Marwyn to oversee his forces in the city, Arthas ran to the Balnir
             Farmstead. There he used his necromantic powers to raise his faithful steed Invincible
@@ -52,6 +49,8 @@
             was designed to steal souls, and that Arthas' own soul was the first one it had claimed.
         </SectionText>
 
+        <SectionDivider/>
+
         <SectionText>
             Tichondrius tasked Arthas with gathering the members of the vile Cult of the Damned that
             were hiding in Vandermar, learning that Kel'Thuzad had expected him, much to his
@@ -64,6 +63,8 @@
             necromancer. This brought Kel'Thuzad's ghost into being, and he secretly instructed
             Arthas not to trust the dreadlords. Arthas quietly contemplated this.
         </SectionText>
+
+        <SectionDivider/>
 
         <SectionText>
             Kel'Thuzad's remains were badly decomposed and needed to be taken to the mystical
@@ -91,6 +92,7 @@ import SectionText from "../section/SectionText.vue";
 import SectionTitle from "../section/SectionTitle.vue";
 import SectionSubtitle from "../section/SectionSubtitle.vue";
 import SectionFigure from "../section/SectionFigure.vue";
+import SectionDivider from "/src/components/section/SectionDivider.vue";
 
 import Homecoming from "/src/assets/images/homecoming.webp";
 import Betrayal from "/src/assets/images/betrayal.webp";

@@ -1,7 +1,7 @@
 <template>
     <div class="section-history-item">
         <SectionTitle>Knight of the Silver Hand</SectionTitle>
-        <SectionText>
+        <SectionText paragraph>
             Troubles began to stir in Lordaeron. Orcs broke free of their internment camps, and
             there was distressing news of a plague that had gripped the northlands. Arthas and Uther
             were sent to Strahnbrad to defend the town from orcish raids. The young prince defeated
@@ -19,6 +19,7 @@
             Before Arthas killed him, Kel'Thuzad spoke of Mal'Ganis, a nathrezim demon who led the
             Scourge. Jaina and Arthas traveled north to confront him in Stratholme.
         </SectionText>
+        <SectionDivider/>
         <SectionText>
             Along the way, Arthas and Jaina stopped at Hearthglen where they hoped to rest. Instead,
             they were warned of an approaching army of undead. Arthas ordered Jaina to find Uther
@@ -28,6 +29,7 @@
             were on the verge of defeat when Uther arrived with reinforcements and saved the
             village.
         </SectionText>
+        <SectionDivider/>
         <SectionText>
             While traveling to Stratholme, Arthas was met by the enigmatic prophet Medivh. He gave
             him the same advice he gave Terenas — to travel west to Kalimdor, as fighting the undead
@@ -69,6 +71,7 @@ import SectionText from "../section/SectionText.vue";
 import SectionTitle from "../section/SectionTitle.vue";
 import SectionSubtitle from "../section/SectionSubtitle.vue";
 import SectionFigure from "../section/SectionFigure.vue";
+import SectionDivider from "/src/components/section/SectionDivider.vue";
 
 import Kelthuzad from "/src/assets/images/kelthuzad.webp";
 import Stratholme from "/src/assets/images/stratholme.webp";

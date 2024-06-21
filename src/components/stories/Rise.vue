@@ -1,7 +1,7 @@
 <template>
     <div class="section-history-item">
-        <SectionTitle>Rise of the Lich King</SectionTitle>
-        <SectionText>
+        <SectionTitle :src="Stormwind" borderColor="var(--accent-color)">Rise of the Lich King</SectionTitle>
+        <SectionText paragraph>
             Arthas was inducted into the Knights of the Silver Hand at the young age of 19. The
             ceremony was held in the Cathedral of Light in Stormwind City, and was attended by
             prominent figures such as Genn Greymane, Thoras Trollbane, Daelin Proudmoore, and Jaina
@@ -71,6 +71,8 @@
 </template>
 
 <script setup>
-import SectionText from "../section/SectionText.vue";
-import SectionTitle from "../section/SectionTitle.vue";
+import SectionText from "/src/components/section/SectionText.vue";
+import SectionTitle from "/src/components/section/SectionTitle.vue";
+import SectionDivider from "/src/components/section/SectionDivider.vue";
+import Stormwind from "/src/assets/images/section/rise/stormwind.webp";
 </script>

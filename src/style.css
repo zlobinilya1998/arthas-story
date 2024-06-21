@@ -8,6 +8,12 @@
     src: url("/src/assets/font/Warcraft.ttf");
 }
 
+@font-face {
+    font-family: "Akaya";
+    src: url("/src/assets/font/Akaya.ttf");
+}
+
+
 :root {
     line-height: 1.5;
     font-weight: 400;

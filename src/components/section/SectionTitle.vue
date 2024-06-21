@@ -1,7 +1,14 @@
 <script setup>
-import Fog from "../shared/Fog.vue";
 import { onMounted, ref } from "vue";
-import { useAppStore } from "../../stores/AppStore";
+import { useAppStore } from "/src/stores/AppStore";
+import Fog from "/src/components/shared/Fog.vue";
+
+const props = defineProps({
+    borderless: Boolean,
+    src: String,
+    borderColor: String,
+});
+
 const { setActiveSection } = useAppStore();
 const title = ref(null);
 
@@ -27,7 +34,12 @@ onMounted(() => {
 });
 </script>
 <template>
-    <div class="section-history-title" ref="title">
+    <div
+        class="section-history-title"
+        ref="title"
+        :class="{ borderless: props.borderless }"
+        :style="{ backgroundImage: `url(${src})`, borderColor: props.borderColor }"
+    >
         <slot />
         <Fog />
     </div>
@@ -45,8 +57,6 @@ onMounted(() => {
     text-shadow: 2px 2px black;
     text-align: center;
     letter-spacing: 0.1em;
-
-    background-image: url("/src/assets/images/section/northrend.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -58,6 +68,10 @@ onMounted(() => {
         border-color: var(--main-color);
         background-position: center;
         opacity: 1;
+    }
+
+    &.borderless {
+        border: unset !important;
     }
 }
 </style>

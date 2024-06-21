@@ -3,7 +3,7 @@
         <SectionTitle>Fall of Quel'Thalas</SectionTitle>
 
         <SectionFigure :src="QuelThalas" caption="Quel'Thalas"/>
-        <SectionText>
+        <SectionText paragraph>
             Arthas met heavy resistance from the elves, rallied by Ranger-General Sylvanas
             Windrunner. Driving their forces before his undead army, he steadily pushed her people
             back in a swath of destruction towards Silvermoon, breaching the kingdom's two elfgates
@@ -27,7 +27,7 @@
         </SectionText>
 
         <SectionTitle>Destruction of Dalaran</SectionTitle>
-        <SectionText>
+        <SectionText paragraph>
             As the pair traveled to Alterac, Kel'Thuzad explained the full extent of the "second
             invasion" and the Lich King's plan. Arthas and Kel'Thuzad went to the Alterac Mountains
             to destroy encampments of Blackrock clan orcs who possessed a functional demon gate,
@@ -35,6 +35,7 @@
             the orcs to secure the portal for themselves. Archimonde instructed them to march to
             Dalaran and acquire the spellbook of Medivh so he could be summoned into Azeroth.
         </SectionText>
+        <SectionDivider/>
         <SectionText>
             Despite the Kirin Tor's valiant efforts to repel the invasion, the Scourge fought
             through their magical defenses and fortifications, killed the Archmage Antonidas and
@@ -50,7 +51,7 @@
             revenge on the city, destroying Dalaran with a single powerful ritual.
         </SectionText>
         <SectionTitle>Invasion of Kalimdor</SectionTitle>
-        <SectionText>
+        <SectionText paragraph>
             Arthas was next seen in Kalimdor on the Lich King's orders, joining the Legion's
             invasion not to aid them but to secretly undermine their efforts. From the shadows he
             influenced the Scourge, causing them to disobey their demon masters. This slowed the
@@ -63,6 +64,7 @@
             kill the dreadlord instead.
         </SectionText>
 
+        <SectionDivider/>
         <SectionText>
             Arthas sensed Illidan's yearning for power and approached him in Felwood. He told the
             recently freed demon hunter how to claim the skull's powers as his own, whereupon he
@@ -79,7 +81,7 @@
 
         <SectionTitle> Return to Lordaeron </SectionTitle>
 
-        <SectionText>
+        <SectionText paragraph>
             Archimonde left a trio of dreadlords behind in the ruined palace gardens of Lordaeron to
             ensure that the nation remained under control, and to watch over the cunning servitors
             of Ner'zhul. When the demon lord was defeated, however, they were not originally aware
@@ -92,7 +94,7 @@
             seizure, and felt the Lich King calling out to him. Despite his diminished powers,
             Arthas fought on until all the humans in the area were killed.
         </SectionText>
-
+        <SectionDivider/>
         <SectionText>
             Little did Arthas know that the Lich King's power had dwindled to the point that
             Sylvanas was no longer under his control. In secret, she attended a meeting with the
@@ -127,6 +129,7 @@ import SectionText from "../section/SectionText.vue";
 import SectionTitle from "../section/SectionTitle.vue";
 import SectionFigure from "../section/SectionFigure.vue";
 import SectionVideo from "../section/SectionVideo.vue";
+import SectionDivider from "/src/components/section/SectionDivider.vue";
 
 import ArthasSylvanas from "/src/assets/images/arthas-sylvanas.jpg";
 import QuelThalas from "/src/assets/images/quel-thalas.jpg";

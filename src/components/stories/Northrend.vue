@@ -1,7 +1,7 @@
 <template>
     <div class="section-history-item">
         <SectionTitle>Northrend</SectionTitle>
-        <SectionText>
+        <SectionText paragraph>
             Arthas followed Mal'Ganis with a detachment of his troops. They arrived a month later in
             Daggercap Bay. As they searched for a proper place to set up camp, Arthas' men came
             under gunfire before being recognized by the dwarven explorers' guild. Arthas was
@@ -11,6 +11,7 @@
             admitted it was mere coincidence. Together they destroyed the nearby undead camp, but
             there was still no sign of Mal'Ganis.
         </SectionText>
+        <SectionDivider secondary/>
         <SectionText>
             As Muradin and Arthas continued their search for Frostmourne, an emissary from Lordaeron
             arrived in a zeppelin and spoke to Captain Luc Valonforth. He bore orders from Uther and
@@ -62,6 +63,7 @@ import SectionText from "../section/SectionText.vue";
 import SectionTitle from "../section/SectionTitle.vue";
 import SectionSubtitle from "../section/SectionSubtitle.vue";
 import SectionFigure from "../section/SectionFigure.vue";
+import SectionDivider from "/src/components/section/SectionDivider.vue";
 
 import Frostmourne from "/src/assets/images/frostmourne.webp";
 import Malganis from "/src/assets/images/malganis.webp";
