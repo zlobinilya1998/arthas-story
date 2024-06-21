@@ -1,8 +1,7 @@
 <template>
     <div class="section-history-item">
         <SectionTitle>Fall of Quel'Thalas</SectionTitle>
-
-        <SectionFigure :src="QuelThalas" caption="Quel'Thalas"/>
+        <SectionFigure :src="Arthas" caption="Army of dead" />
         <SectionText paragraph>
             Arthas met heavy resistance from the elves, rallied by Ranger-General Sylvanas
             Windrunner. Driving their forces before his undead army, he steadily pushed her people
@@ -13,11 +12,6 @@
             a horrendous twisted form (a banshee) and enslaving her to the will of the Lich King,
             forcing her to slay her own people.
         </SectionText>
-        <SectionFigure :src="ArthasSylvanas">
-            Sylvanas: Finish it! I deserve... a clean death <br />
-            Arthas: After all you've put me trough, woman, the last thing i'll give you is the peace
-            of death
-        </SectionFigure>
         <SectionText>
             Arthas and the marching armies of the Scourge annihilated Silvermoon, leaving it in
             ruins. On the road to the Sunwell, he fought Grand Magister Belo'vir and left him
@@ -25,8 +19,19 @@
             Sunstrider, the aged High King of Quel'Thalas, and killed him with minimal struggle.
             Arthas then used the Sunwell to bring Kel'Thuzad back as an undead lich.
         </SectionText>
+        <SectionFigure :src="ArthasSylvanas">
+            Sylvanas: Finish it! I deserve... a clean death <br />
+            Arthas: After all you've put me trough, woman, the last thing i'll give you is the peace
+            of death
+        </SectionFigure>
 
         <SectionTitle>Destruction of Dalaran</SectionTitle>
+        <SectionFigure
+            :src="Dalaran"
+            style="float: right; width: 50%; margin-top: 0px"
+            bordered
+            caption="Dalaran"
+        />
         <SectionText paragraph>
             As the pair traveled to Alterac, Kel'Thuzad explained the full extent of the "second
             invasion" and the Lich King's plan. Arthas and Kel'Thuzad went to the Alterac Mountains
@@ -35,7 +40,7 @@
             the orcs to secure the portal for themselves. Archimonde instructed them to march to
             Dalaran and acquire the spellbook of Medivh so he could be summoned into Azeroth.
         </SectionText>
-        <SectionDivider/>
+        <SectionDivider />
         <SectionText>
             Despite the Kirin Tor's valiant efforts to repel the invasion, the Scourge fought
             through their magical defenses and fortifications, killed the Archmage Antonidas and
@@ -64,7 +69,7 @@
             kill the dreadlord instead.
         </SectionText>
 
-        <SectionDivider/>
+        <SectionDivider />
         <SectionText>
             Arthas sensed Illidan's yearning for power and approached him in Felwood. He told the
             recently freed demon hunter how to claim the skull's powers as his own, whereupon he
@@ -94,7 +99,7 @@
             seizure, and felt the Lich King calling out to him. Despite his diminished powers,
             Arthas fought on until all the humans in the area were killed.
         </SectionText>
-        <SectionDivider/>
+        <SectionDivider />
         <SectionText>
             Little did Arthas know that the Lich King's power had dwindled to the point that
             Sylvanas was no longer under his control. In secret, she attended a meeting with the
@@ -133,4 +138,6 @@ import SectionDivider from "/src/components/section/SectionDivider.vue";
 
 import ArthasSylvanas from "/src/assets/images/arthas-sylvanas.jpg";
 import QuelThalas from "/src/assets/images/quel-thalas.jpg";
+import Dalaran from "/src/assets/images/section/quelThalas/dalaran.webp";
+import Arthas from "/src/assets/images/section/quelThalas/arthas.webp";
 </script>

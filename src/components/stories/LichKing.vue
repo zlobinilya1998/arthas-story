@@ -50,7 +50,7 @@
         </SectionText>
 
         <SectionDivider/>
-
+        <SectionFigure :src="Tichondrius" style="float: left;width: 30%;margin-top: 0;" bordered caption="Tichondrius"/>
         <SectionText>
             Tichondrius tasked Arthas with gathering the members of the vile Cult of the Damned that
             were hiding in Vandermar, learning that Kel'Thuzad had expected him, much to his
@@ -63,6 +63,8 @@
             necromancer. This brought Kel'Thuzad's ghost into being, and he secretly instructed
             Arthas not to trust the dreadlords. Arthas quietly contemplated this.
         </SectionText>
+
+        
 
         <SectionDivider/>
 
@@ -96,4 +98,5 @@ import SectionDivider from "/src/components/section/SectionDivider.vue";
 
 import Homecoming from "/src/assets/images/homecoming.webp";
 import Betrayal from "/src/assets/images/betrayal.webp";
+import Tichondrius from "/src/assets/images/section/lichKing/tichondrius.jpg"
 </script>

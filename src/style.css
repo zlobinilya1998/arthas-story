@@ -13,7 +13,6 @@
     src: url("/src/assets/font/Akaya.ttf");
 }
 
-
 :root {
     line-height: 1.5;
     font-weight: 400;
@@ -52,7 +51,9 @@ figure {
     margin: 0;
 }
 
-
+[previewable]:hover {
+    cursor: url("/src/assets/images/cursor-hover.webp"), auto;
+}
 
 @keyframes shine {
     from {

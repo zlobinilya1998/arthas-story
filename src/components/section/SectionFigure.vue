@@ -1,7 +1,9 @@
 <template>
     <div class="section-history-img" :class="{ bordered }">
         <figure>
-            <img :src="src" />
+            <Transition mode="out-in">
+                <img ref="img" :src="imgSrc" :key="index" previewable/>
+            </Transition>
             <figcaption v-text="caption" />
             <SectionQuote v-if="$slots.default">
                 <slot />
@@ -11,11 +13,37 @@
 </template>
 
 <script setup>
+import { computed, onMounted, ref } from "vue";
 import SectionQuote from "./SectionQuote.vue";
 const props = defineProps({
     caption: String,
-    src: String,
+    src: String | [],
     bordered: Boolean,
+});
+
+const isHaveMultipleImages = computed(() => {
+    return Array.isArray(props.src);
+});
+let index = ref(0);
+const imgSrc = computed(() => {
+    if (isHaveMultipleImages.value) return props.src[index.value];
+    return props.src;
+});
+
+const createSlider = () => {
+    if (!isHaveMultipleImages.value) return;
+    const maxIndex = props.src.length - 1;
+    setInterval(() => {
+        if (index.value === maxIndex) {
+            index.value = 0;
+            return
+        }
+        index.value += 1;
+    }, 5_000);
+};
+
+onMounted(() => {
+    createSlider();
 });
 </script>
 
@@ -87,5 +115,15 @@ const props = defineProps({
             left: 0;
         }
     }
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: all 0.5s ease;
+}
+
+.v-leave-to,
+.v-enter-from {
+    opacity: 0;
 }
 </style>

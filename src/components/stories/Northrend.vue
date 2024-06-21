@@ -30,7 +30,7 @@
             As he arrived, Mal'Ganis appeared to him, and foretold his death. Arthas went to search
             for Frostmourne with Muradin, leaving his captain to defend the camp.
         </SectionText>
-        <SectionFigure :src="Frostmourne" caption="Claming Frostmourne" bordered style="width: 30%;float: right;"/>
+        <SectionFigure :src="[Frostmourne,Returning]" caption="Claming Frostmourne" bordered style="width: 30%;float: right;"/>
         <SectionText>
             Using an ancient waygate Arthas, Muradin, and a small group of men traveled to the
             vicinity of the fabled runeblade. Arthas was soon confronted by the Guardian, who tried
@@ -67,5 +67,6 @@ import SectionDivider from "/src/components/section/SectionDivider.vue";
 
 import Northrend from "/src/assets/images/section/northrend/northrend.jpg"
 import Frostmourne from "/src/assets/images/frostmourne.webp";
+import Returning from "/src/assets/images/section/northrend/returning.jpg";
 import Malganis from "/src/assets/images/malganis.webp";
 </script>

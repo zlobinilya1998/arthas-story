@@ -10,6 +10,7 @@
             Blackrock clan blademaster leading the raids.
         </SectionText>
         <SectionSubtitle> Plague of Undeath </SectionSubtitle>
+        <SectionFigure :src="Uther" style="float: right; width: 40%" bordered />
         <SectionText>
             Weeks later a more vile threat arose in the form of the Plague of Undeath. Jaina and
             Captain Falric were sent to help Arthas, now 24 years old, investigate the strange
@@ -20,6 +21,12 @@
             Scourge. Jaina and Arthas traveled north to confront him in Stratholme.
         </SectionText>
         <SectionDivider />
+        <SectionFigure
+            :src="Defense"
+            style="float: left; width: 50%; margin-top: 0"
+            bordered
+            caption="Defense of Hearthglen"
+        />
         <SectionText>
             Along the way, Arthas and Jaina stopped at Hearthglen where they hoped to rest. Instead,
             they were warned of an approaching army of undead. Arthas ordered Jaina to find Uther
@@ -43,7 +50,7 @@
             :src="Stratholme"
             caption="Arthas starting to kill the citizens"
             bordered
-            style="float: left; width: 40%;margin-left: 0;margin-top: 0;"
+            style="float: left; width: 40%; margin-left: 0; margin-top: 0"
         />
         <SectionText>
             When he arrived at Stratholme, Arthas found that the grain had already been distributed.
@@ -55,7 +62,7 @@
             while those who remained loyal to Arthas joined him in slaughtering the infected
             citizens.
         </SectionText>
-     
+
         <SectionText>
             As Arthas began to slay the citizens of Stratholme, he was met by Mal'Ganis himself, who
             was working to claim their souls. Arthas sought to destroy them before Mal'Ganis could
@@ -76,4 +83,6 @@ import SectionDivider from "/src/components/section/SectionDivider.vue";
 import Kelthuzad from "/src/assets/images/kelthuzad.webp";
 import Stratholme from "/src/assets/images/stratholme.webp";
 import StratholmeTitle from "/src/assets/images/section/silverHand/stratholme.webp";
+import Uther from "/src/assets/images/section/silverHand/uther.jpg";
+import Defense from "/src/assets/images/section/silverHand/defense.jpg";
 </script>
