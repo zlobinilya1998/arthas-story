@@ -1,6 +1,6 @@
 <template>
     <div class="section-history-item">
-        <SectionTitle>Northrend</SectionTitle>
+        <SectionTitle :src="Northrend" static color="var(--main-color)">Northrend</SectionTitle>
         <SectionText paragraph>
             Arthas followed Mal'Ganis with a detachment of his troops. They arrived a month later in
             Daggercap Bay. As they searched for a proper place to set up camp, Arthas' men came
@@ -30,7 +30,7 @@
             As he arrived, Mal'Ganis appeared to him, and foretold his death. Arthas went to search
             for Frostmourne with Muradin, leaving his captain to defend the camp.
         </SectionText>
-        <SectionFigure :src="Frostmourne" caption="Claming Frostmourne" />
+        <SectionFigure :src="Frostmourne" caption="Claming Frostmourne" bordered style="width: 30%;float: right;"/>
         <SectionText>
             Using an ancient waygate Arthas, Muradin, and a small group of men traveled to the
             vicinity of the fabled runeblade. Arthas was soon confronted by the Guardian, who tried
@@ -65,6 +65,7 @@ import SectionSubtitle from "../section/SectionSubtitle.vue";
 import SectionFigure from "../section/SectionFigure.vue";
 import SectionDivider from "/src/components/section/SectionDivider.vue";
 
+import Northrend from "/src/assets/images/section/northrend/northrend.jpg"
 import Frostmourne from "/src/assets/images/frostmourne.webp";
 import Malganis from "/src/assets/images/malganis.webp";
 </script>

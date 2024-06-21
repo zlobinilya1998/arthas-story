@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
 import { useAppStore } from "../stores/AppStore";
 
 const store = useAppStore();
@@ -10,6 +10,10 @@ const toggleOpen = () => {
 
 let navigations = ref([]);
 const navigation = ref(null);
+
+const showNavigation = computed(() => {
+    return store.activeSection
+})
 
 const scrollToTitle = (text) => {
     const titles = Array.from(document.querySelectorAll(".section-history-title"));
@@ -41,7 +45,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="navigation" ref="navigation">
+    <div class="navigation" ref="navigation" :style="{display: showNavigation ? '' : 'none'}">
         <div class="navigation-items" :class="{ expanded: isOpened }">
             <div
                 v-for="item in navigations"

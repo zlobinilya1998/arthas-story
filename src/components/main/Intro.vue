@@ -1,4 +1,17 @@
+<script setup>
+import Audio from "/src/components/shared/Audio.vue";
+import Video from "/src/components/shared/Video.vue";
+</script>
 <template>
+    <div class="intro-video">
+        <div class="info-card">
+            <h3 class="arthas-title">Arthas Menethil</h3>
+            <h4 class="arthas-title">The Lich King</h4>
+        </div>
+
+        <Video />
+        <Audio />
+    </div>
     <div class="intro-background">
         <div class="intro-top" />
         <div class="intro-bottom" />
@@ -10,9 +23,9 @@
             <div>
                 <div class="intro-description">
                     Prince Arthas Menethil was born to King Terenas Menethil II and Queen Lianne
-                    Menethil, four years before the start of the First War. The young prince
-                    grew up in a time when the lands of Azeroth were ravaged by war, the Alliance
-                    was crumbling, and darker clouds still loomed on the horizon. As a young child,
+                    Menethil, four years before the start of the First War. The young prince grew up
+                    in a time when the lands of Azeroth were ravaged by war, the Alliance was
+                    crumbling, and darker clouds still loomed on the horizon. As a young child,
                     Arthas became best friends with Varian Wrynn and often sparred with him, though
                     Arthas was less experienced. He also watched as his future steed, Invincible,
                     grew up. As a youth, Arthas was trained in combat by Muradin Bronzebeard, the
@@ -30,7 +43,33 @@
 </template>
 
 <style lang="scss">
+.info-card {
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    max-width: 300px;
+    padding: 20px;
+}
+
+.arthas-title {
+    text-shadow: black 1px 0 10px;
+    color: rgba(10, 212, 248, 0.9);
+    letter-spacing: 0.1em;
+    font-size: 2em;
+    text-align: center;
+    font-family: Folkard, sans-serif;
+    margin: 0;
+}
+
+.arthas-description {
+    font-family: Folkard, sans-serif;
+}
+
 .intro {
+    &-video {
+        position: relative;
+        min-height: 100vh;
+    }
     &-background {
         position: relative;
         padding: 50px 0;
@@ -41,7 +80,8 @@
         top: -25px;
         width: 100%;
         height: 80px;
-        background-size: contain;
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         background-image: url("https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt661008ac61a51d63/653018bbaf5c2fb7aca0cb0e/Border_1.png?format=webply&quality=70");
     }

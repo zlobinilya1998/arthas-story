@@ -52,21 +52,7 @@ figure {
     margin: 0;
 }
 
-figcaption {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    opacity: 0;
-    transition: 0.3s;
-    font-size: 2em;
-    text-align: center;
-    text-shadow: gold 1px 0 10px;
-    font-family: "Folkard", sans-serif;
-}
 
-figure:hover figcaption {
-    opacity: 1;
-}
 
 @keyframes shine {
     from {

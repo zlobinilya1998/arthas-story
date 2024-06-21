@@ -1,6 +1,6 @@
 <template>
     <div class="section-history-item">
-        <SectionTitle>Knight of the Silver Hand</SectionTitle>
+        <SectionTitle :src="StratholmeTitle" static>Knight of the Silver Hand</SectionTitle>
         <SectionText paragraph>
             Troubles began to stir in Lordaeron. Orcs broke free of their internment camps, and
             there was distressing news of a plague that had gripped the northlands. Arthas and Uther
@@ -19,7 +19,7 @@
             Before Arthas killed him, Kel'Thuzad spoke of Mal'Ganis, a nathrezim demon who led the
             Scourge. Jaina and Arthas traveled north to confront him in Stratholme.
         </SectionText>
-        <SectionDivider/>
+        <SectionDivider />
         <SectionText>
             Along the way, Arthas and Jaina stopped at Hearthglen where they hoped to rest. Instead,
             they were warned of an approaching army of undead. Arthas ordered Jaina to find Uther
@@ -29,7 +29,7 @@
             were on the verge of defeat when Uther arrived with reinforcements and saved the
             village.
         </SectionText>
-        <SectionDivider/>
+        <SectionDivider />
         <SectionText>
             While traveling to Stratholme, Arthas was met by the enigmatic prophet Medivh. He gave
             him the same advice he gave Terenas — to travel west to Kalimdor, as fighting the undead
@@ -37,11 +37,14 @@
             his people, and vowed that he would not abandon them. Jaina suggested that the prophet
             might be right, but Arthas paid her no heed and continued to Stratholme
         </SectionText>
-        <SectionFigure
-            :src="Kelthuzad"
-            caption="Arthas and Jaina encountering Kel'Thuzad"
-        />
+        <SectionFigure :src="Kelthuzad" caption="Arthas and Jaina encountering Kel'Thuzad" />
         <SectionSubtitle>Culling of Stratholme</SectionSubtitle>
+        <SectionFigure
+            :src="Stratholme"
+            caption="Arthas starting to kill the citizens"
+            bordered
+            style="float: left; width: 40%;margin-left: 0;margin-top: 0;"
+        />
         <SectionText>
             When he arrived at Stratholme, Arthas found that the grain had already been distributed.
             He knew the people of Stratholme would soon become undead, and ordered Uther and his
@@ -52,6 +55,7 @@
             while those who remained loyal to Arthas joined him in slaughtering the infected
             citizens.
         </SectionText>
+     
         <SectionText>
             As Arthas began to slay the citizens of Stratholme, he was met by Mal'Ganis himself, who
             was working to claim their souls. Arthas sought to destroy them before Mal'Ganis could
@@ -59,10 +63,6 @@
             slipped away, however, vowing to meet him in Northrend. Arthas then set fire to
             Stratholme, and those fires burn to this day.
         </SectionText>
-        <SectionFigure
-            :src="Stratholme"
-            caption="Arthas starting to kill the citizens"
-        />
     </div>
 </template>
 
@@ -75,4 +75,5 @@ import SectionDivider from "/src/components/section/SectionDivider.vue";
 
 import Kelthuzad from "/src/assets/images/kelthuzad.webp";
 import Stratholme from "/src/assets/images/stratholme.webp";
+import StratholmeTitle from "/src/assets/images/section/silverHand/stratholme.webp";
 </script>
