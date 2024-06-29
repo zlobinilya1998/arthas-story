@@ -1,5 +1,4 @@
 <script setup>
-import Audio from "/src/components/shared/Audio.vue";
 import Video from "/src/components/shared/Video.vue";
 </script>
 <template>
@@ -8,9 +7,7 @@ import Video from "/src/components/shared/Video.vue";
             <h3 class="arthas-title">Arthas Menethil</h3>
             <h4 class="arthas-title">The Lich King</h4>
         </div>
-
         <Video />
-        <Audio />
     </div>
     <div class="intro-background">
         <div class="intro-top" />
@@ -53,9 +50,9 @@ import Video from "/src/components/shared/Video.vue";
 
 .arthas-title {
     text-shadow: black 1px 0 10px;
-    color: rgba(10, 212, 248, 0.9);
+    color: var(--main-color);
     letter-spacing: 0.1em;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     font-family: Folkard, sans-serif;
     margin: 0;
@@ -72,8 +69,11 @@ import Video from "/src/components/shared/Video.vue";
     }
     &-background {
         position: relative;
-        padding: 50px 0;
+        padding: 5em 0;
         background-image: url("https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt68767eb2e400c81d/6527ba4ba954472098f3f1f1/Cloud_Desktop.jpg");
+        @media (max-width: 600px){
+            padding: 2em 0;
+        }
     }
     &-top {
         position: absolute;
@@ -84,6 +84,11 @@ import Video from "/src/components/shared/Video.vue";
         background-position: center;
         background-repeat: no-repeat;
         background-image: url("https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt661008ac61a51d63/653018bbaf5c2fb7aca0cb0e/Border_1.png?format=webply&quality=70");
+        
+        @media (max-width: 600px){
+            background-size: 200%;
+            top: -45px;
+        }
     }
 
     &-bottom {
@@ -97,7 +102,7 @@ import Video from "/src/components/shared/Video.vue";
     &-content {
         padding: 0 20px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 20px;
         font-family: "Folkard", sans-serif;
         &-img {
@@ -105,11 +110,21 @@ import Video from "/src/components/shared/Video.vue";
             border-radius: 10px;
             border: 1px solid rgba(245, 182, 22, 0.5);
         }
+
+        @media (max-width: 600px){
+            padding: 0 1em;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &-img {
+                max-width: 100px;
+            }
+        }
     }
 
     &-description {
         margin-top: 5px;
-        font-size: 1.1em;
+        font-size: 1.3em;
         letter-spacing: 0.1em;
     }
 }

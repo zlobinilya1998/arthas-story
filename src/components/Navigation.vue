@@ -12,8 +12,8 @@ let navigations = ref([]);
 const navigation = ref(null);
 
 const showNavigation = computed(() => {
-    return store.activeSection
-})
+    return store.activeSection;
+});
 
 const scrollToTitle = (text) => {
     const titles = Array.from(document.querySelectorAll(".section-history-title"));
@@ -45,7 +45,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="navigation" ref="navigation" :style="{display: showNavigation ? '' : 'none'}">
+    <div class="navigation" ref="navigation" :style="{ display: showNavigation ? '' : 'none' }">
         <div class="navigation-items" :class="{ expanded: isOpened }">
             <div
                 v-for="item in navigations"
@@ -81,7 +81,8 @@ onMounted(() => {
     z-index: 1;
     &-item {
         cursor: url("/src/assets/images/cursor-hover.webp"), auto;
-        padding: 5px 10px;
+        padding: 0.5em 1em;
+        font-size: 1.5em;
         transition: 0.3s;
         background-size: contain;
         background-repeat: no-repeat;
@@ -99,6 +100,18 @@ onMounted(() => {
     }
     &.visible {
         top: 100px;
+        @media (max-width: 600px) {
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            border-left: unset;
+            border-right: unset;
+            border-top: 1px solid var(--secondary-color);
+            border-bottom: 1px solid var(--secondary-color);
+            max-height: 100vh;
+            overflow-y: scroll;
+        }
     }
 }
 .navigation-items {

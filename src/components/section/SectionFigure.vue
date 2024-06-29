@@ -83,10 +83,12 @@ onMounted(() => {
         left: 20px;
         opacity: 0;
         transition: 0.3s;
-        font-size: 2em;
+        font-size: 3em;
         text-align: center;
-        text-shadow: gold 1px 0 10px;
+        text-shadow: black 1px 0 10px;
         font-family: "Folkard", sans-serif;
+        border-radius: 10px;
+        padding: 10px;
     }
 
     figure:hover figcaption {
@@ -98,7 +100,7 @@ onMounted(() => {
 
         &:hover {
             img {
-                outline: 1px solid rgb(23, 210, 223);
+                outline: 1px solid var(--main-color);
             }
         }
         img {
@@ -106,10 +108,12 @@ onMounted(() => {
         }
         figcaption {
             width: 100%;
-            font-size: 1.25em;
+            font-size: 1.75em;
             bottom: 0px;
             padding: 5px 0;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 1);
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
             left: 0;

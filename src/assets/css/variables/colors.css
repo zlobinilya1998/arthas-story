@@ -1,0 +1,6 @@
+:root {
+    --main-color: rgba(10, 212, 248, 0.9);
+    --secondary-color: rgb(11, 119, 234);
+    --accent-color: gold;
+    --main-color-clear: rgba(10, 212, 248, 0.5);
+}

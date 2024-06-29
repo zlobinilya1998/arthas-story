@@ -7,6 +7,6 @@
         playsinline="true"
         preload="auto"
     >
-        <source type="video/webm" src="/src/assets/arthas.mp4" />
+        <source type="video/webm" src="/src/assets/video/arthas.mp4" />
     </video>
 </template>

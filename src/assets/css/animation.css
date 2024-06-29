@@ -1,0 +1,8 @@
+@keyframes shine {
+    from {
+        box-shadow: 0 0 55px 10px white;
+    }
+    to {
+        box-shadow: 0 0 90px 20px white;
+    }
+}

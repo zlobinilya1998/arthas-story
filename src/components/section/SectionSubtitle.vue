@@ -7,7 +7,7 @@
 <style lang="scss">
 .section-history-subtitle {
     color: var(--accent-color);
-    font-size: 1.75em;
+    font-size: 3em;
     margin: 20px 0;
     line-height: 1.5;
     text-shadow: 1px 1px var(--secondary-color);

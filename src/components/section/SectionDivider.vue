@@ -29,6 +29,12 @@ const background = computed(() => {
     margin: 20px auto;
     width: 75%;
     height: 10px;
-    // background-image: url("/src/assets/images/section/divider-secondary.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 }
 </style>

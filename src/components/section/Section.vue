@@ -27,24 +27,35 @@ import QuelThalas from "/src/components/stories/QuelThalas.vue";
 .section-history {
     position: relative;
     display: flex;
-    padding: 0 20px 20px;
+    padding: 0 2em 2em;
     background-position: top;
     background-image: url("https://assets.worldofwarcraft.blizzard.com/static/components/Pane/Pane-dirtDark.ea235926d6487091ac2d6786fd7d2615.jpg");
 
     &-top {
-        margin: 10px 0 50px;
+        margin: 1em 0 5em;
         img {
             margin: 0 auto;
+        }
+
+        @media (max-width: 600px){
+            margin: 0;
         }
     }
 
     &-container {
         max-width: 900px;
         margin: 0 auto;
-        font-size: 1em;
         font-family: Roboto, sans-serif;
         line-height: 1.5;
         padding-left: 1em;
+    }
+
+    @media (max-width: 600px) {
+        padding: 0 1em 1em;
+
+        &-container {
+            padding-left: unset;
+        }
     }
 }
 </style>

@@ -11,5 +11,6 @@
     padding: 1em;
     padding-right: 4em;
     transition: 0.3s;
+    font-size: 1.25em;
 }
 </style>

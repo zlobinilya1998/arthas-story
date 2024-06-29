@@ -60,7 +60,7 @@ onMounted(() => {
     position: relative;
     margin: 30px 0;
     padding: 10px 0;
-    font-size: 2.5em;
+    font-size: 4em;
     font-family: "Warcraft", sans-serif;
     line-height: 1.5;
     text-shadow: 2px 2px black;
@@ -82,6 +82,11 @@ onMounted(() => {
 
     &.borderless {
         border: unset !important;
+    }
+
+    @media (max-width: 600px){
+        font-size: 3em;
+        letter-spacing: 0;
     }
 }
 </style>

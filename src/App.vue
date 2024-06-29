@@ -8,13 +8,18 @@ import PreviewDialog from "/src/components/dialog/PreviewDialog.vue";
 import { onMounted } from "vue";
 import { useAppStore } from "/src/stores/AppStore";
 const store = useAppStore();
-onMounted(() => {
+
+const createImagePreview = () => {
     const images = Array.from(document.querySelectorAll("img[previewable]"));
     images.forEach((image) => {
         image.onclick = (e) => {
             store.showPreview(e.target.src);
         };
     });
+};
+
+onMounted(() => {
+    createImagePreview();
 });
 </script>
 
@@ -25,5 +30,3 @@ onMounted(() => {
     <Intro />
     <Section />
 </template>
-
-<style scoped></style>
