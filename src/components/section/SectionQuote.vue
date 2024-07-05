@@ -1,6 +1,6 @@
 <template>
     <div class="section-history-quote">
-        <slot />
+        <!-- <slot /> -->
     </div>
 </template>
 
